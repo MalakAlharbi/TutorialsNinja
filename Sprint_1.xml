@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TutorialsNinja">
+
+    <parameter name="browsername" value=""/>
+    <test name="Check Login Feature">
+        <parameter name="browsername" value=""/>
+        <classes>
+            <class name="testcases.TC01_Index">
+                <methods>
+                    <include name="validateNavigationToLoginPage"/>
+                </methods>
+            </class>
+
+            <class name="testcases.TC02_Login">
+                <methods>
+                    <include name="validateLoginToSystem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
